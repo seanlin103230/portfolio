@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sean Lin 林杉 — 2023–2026 Design Portfolio 設計作品集</title>
+  <meta name="description" content="林杉 Sean Lin (2023–2026 Design Portfolio) 設計作品集網站：刊物與裝幀設計、視覺識別設計、社群與數位媒介設計。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 頂部滾動進度條 -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- 導覽列 -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-en">Sean Lin</span>
+        <span class="logo-zh">林杉 設計作品集</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">關於林杉</a>
+        <a href="#index-toc" class="nav-link">目次</a>
+        <a href="#works" class="nav-link">精選作品</a>
+        <a href="#experience" class="nav-link">經歷與獲獎</a>
+        <a href="#contact" class="nav-link">聯絡資訊</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/SeanLin-Portfolio-2023-2026.pdf" target="_blank" rel="noopener noreferrer" class="pdf-pill" title="開啟完整 PDF 作品集">
+          <span>PDF 作品集 ↗</span>
+        </a>
+
+        <a href="https://www.instagram.com/seanlin_03/" target="_blank" rel="noopener noreferrer" class="ig-pill" aria-label="前往 Instagram @seanlin_03">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@seanlin_03</span>
+        </a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="切換深淺色主題" title="切換主題">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="開啟選單" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero 區塊：重現作品集封面視覺（Sean 水平 + Lin 垂直轉置 + 鈷藍光暈） -->
+    <section class="hero" id="hero">
+      <div class="hero-orb" id="heroOrb" aria-hidden="true"></div>
+
+      <div class="container hero-cover">
+        <div class="cover-lockup reveal">
+          <div class="cover-top-row">
+            <span class="cover-sean">Sean</span>
+            <div class="cover-meta-en">
+              <span>2023–2026</span>
+              <span>Design Portfolio</span>
+            </div>
+          </div>
+
+          <div class="cover-bottom-row">
+            <div class="cover-meta-zh">
+              <span>林杉</span>
+              <span>設計作品集</span>
+            </div>
+            <span class="cover-lin">Lin</span>
+          </div>
+        </div>
+
+        <div class="hero-bottom-bar reveal" style="--delay: 0.15s">
+          <div class="hero-lead-wrap">
+            <p class="hero-tagline">
+              從日常觀察與在地文化中找尋靈感，轉譯成幾何的視覺語言。<br />
+              希望設計不只是解決問題的途徑，更能回應社會脈動，開啟更多對話與思考的可能。
+            </p>
+            <div class="hero-cta">
+              <a href="#works" class="btn btn-primary">瀏覽全部作品 (11)</a>
+              <a href="assets/SeanLin-Portfolio-2023-2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                完整 PDF 作品集 (52頁) ↗
+              </a>
+            </div>
+          </div>
+
+          <ul class="cover-categories">
+            <li><a href="#works" data-jump-filter="editorial"><span>(1)</span> Editorial &amp; Book 刊物與裝幀</a></li>
+            <li><a href="#works" data-jump-filter="vi"><span>(2)</span> Visual Identity 視覺識別</a></li>
+            <li><a href="#works" data-jump-filter="social"><span>(3)</span> Social and Digital Media 社群與數位媒介</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 / 關於林杉 (重現 p.02 個人簡介與肖像排版) -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-portfolio-grid">
+          <div class="portrait-column reveal">
+            <div class="portrait-frame">
+              <div class="portrait-lockup" aria-hidden="true">
+                <span class="p-sean">Sean</span>
+                <span class="p-lin">Lin</span>
+              </div>
+              <img src="assets/extracted/portrait.png" alt="林杉 Sean Lin 肖像" class="portrait-img" />
+            </div>
+          </div>
+
+          <div class="about-text-column reveal" style="--delay: 0.12s">
+            <span class="section-index">01 / PROFILE</span>
+            <div class="about-name-row">
+              <h2 class="about-name">林杉 <span>Sean Lin</span></h2>
+              <span class="about-birth">2008 · HCHS</span>
+            </div>
+
+            <div class="about-paragraphs">
+              <p class="about-highlight">
+                現就讀國立新竹高級中學。對於視覺設計與使用者體驗有熱情，擅長從日常觀察、在地文化中找尋靈感，並轉譯成幾何的視覺語言。
+              </p>
+              <p>
+                曾任<strong>竹嶺校刊美術編輯</strong>及<strong>竹嶺班聯設計長</strong>，負責統籌刊物編輯、規劃視覺規範與活動視覺，累積跨媒介整合的經驗。希望設計不只是解決問題的途徑，更能透過設計過程，回應社會脈動，開啟更多對話與思考的可能。
+              </p>
+            </div>
+
+            <div class="about-stats-grid">
+              <div class="stat-box">
+                <span class="stat-num">03</span>
+                <span class="stat-label">大核心設計範疇<br /><small>裝幀 · 識別 · 數位媒介</small></span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">11+</span>
+                <span class="stat-label">完整統籌與視覺專案<br /><small>2023–2026 代表作</small></span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">50,000+</span>
+                <span class="stat-label">校慶視覺社群觸及瀏覽<br /><small>跨處室與全校延伸應用</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 / 目次 Index (重現 p.02-03 目次章節架構) -->
+    <section class="section section-toc" id="index-toc">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-index">02 / TABLE OF CONTENTS</span>
+          <h2 class="section-title">作品集目次架構</h2>
+        </div>
+
+        <div class="toc-grid">
+          <!-- Chapter 1 -->
+          <div class="toc-chapter reveal" style="--ch-color: #c89a49">
+            <div class="toc-ch-head">
+              <span class="toc-ch-num">(1)</span>
+              <div>
+                <h3 class="toc-ch-title">刊物與裝幀設計</h3>
+                <p class="toc-ch-en">Editorial &amp; Book Design</p>
+              </div>
+            </div>
+            <ul class="toc-list">
+              <li>
+                <button class="toc-item-btn" data-open-project="xunguang">
+                  <span>竹嶺校刊 56 期《巡光》</span>
+                  <span class="toc-page">p.06</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="express">
+                  <span>新竹高中 102 週年校慶運動會快報、特報</span>
+                  <span class="toc-page">p.15</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="zhujian">
+                  <span>竹嶺新生刊第三期《竹劍》</span>
+                  <span class="toc-page">p.16</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Chapter 2 -->
+          <div class="toc-chapter reveal" style="--delay: 0.1s; --ch-color: #004da8">
+            <div class="toc-ch-head">
+              <span class="toc-ch-num">(2)</span>
+              <div>
+                <h3 class="toc-ch-title">視覺識別設計</h3>
+                <p class="toc-ch-en">Visual Identity Design</p>
+              </div>
+            </div>
+            <ul class="toc-list">
+              <li>
+                <button class="toc-item-btn" data-open-project="anniv102">
+                  <span>新竹高中 102 週年校慶主視覺</span>
+                  <span class="toc-page">p.22</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="german">
+                  <span>德國文化日活動主視覺</span>
+                  <span class="toc-page">p.28</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="literary36">
+                  <span>第 36 屆竹中竹女聯合文藝獎主視覺</span>
+                  <span class="toc-page">p.33</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="hcca">
+                  <span>竹嶺班聯組織視覺識別系統</span>
+                  <span class="toc-page">p.34</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="class202">
+                  <span>新竹高中 79 屆二班視覺識別</span>
+                  <span class="toc-page">p.40</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Chapter 3 -->
+          <div class="toc-chapter reveal" style="--delay: 0.2s; --ch-color: #78866b">
+            <div class="toc-ch-head">
+              <span class="toc-ch-num">(3)</span>
+              <div>
+                <h3 class="toc-ch-title">社群與數位媒介設計</h3>
+                <p class="toc-ch-en">Social and Digital Media Design</p>
+              </div>
+            </div>
+            <ul class="toc-list">
+              <li>
+                <button class="toc-item-btn" data-open-project="social-posts">
+                  <span>竹嶺校刊幹部介紹、獲獎海報與《線徑》縮圖</span>
+                  <span class="toc-page">p.44</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="xunguang-ig">
+                  <span>竹嶺校刊《巡光》IG 宣傳貼文</span>
+                  <span class="toc-page">p.46</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="bookclub-slides">
+                  <span>雜誌讀書會 &amp;「未來」讀書會簡報</span>
+                  <span class="toc-page">p.48</span>
+                </button>
+              </li>
+              <li>
+                <button class="toc-item-btn" data-open-project="course-slides">
+                  <span>校刊社美編課程簡報</span>
+                  <span class="toc-page">p.50</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / 精選作品展示 (使用作品集真實高清圖片與多圖彈窗) -->
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <span class="section-index">03 / PORTFOLIO WORKS (2023–2026)</span>
+            <h2 class="section-title">作品總覽</h2>
+          </div>
+
+          <!-- 分類篩選器 -->
+          <div class="filter-tabs" role="tablist" aria-label="作品集章節篩選">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">全部作品 (11)</button>
+            <button class="filter-btn" data-filter="editorial" role="tab" aria-selected="false">(1) 刊物與裝幀</button>
+            <button class="filter-btn" data-filter="vi" role="tab" aria-selected="false">(2) 視覺識別</button>
+            <button class="filter-btn" data-filter="social" role="tab" aria-selected="false">(3) 社群與數位媒介</button>
+          </div>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+          <!-- 1. 竹嶺校刊 56 期《巡光》 -->
+          <article class="work-card reveal" data-category="editorial" data-modal="xunguang">
+            <div class="work-preview">
+              <img src="assets/extracted/img-003.jpg" alt="竹嶺校刊56期《巡光》裝幀設計" loading="lazy" />
+              <span class="work-badge badge-editorial">01 · 刊物與裝幀設計</span>
+              <span class="work-year">p.06–13</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#裝幀設計</span>
+                <span>#編輯統籌</span>
+                <span>#膠裝與裸背線裝雙冊合一</span>
+                <span>#銀色油墨</span>
+              </div>
+              <h3 class="work-title">竹嶺校刊 56 期《巡光》</h3>
+              <p class="work-desc">
+                以「巡光」為題，章節依循光譜概念編排。封面靈感源自日本攝影師水谷吉法《Voices of Flowers》失焦光暈效果；裝幀採用膠裝與裸背線裝雙冊合一，並首次於校刊內頁運用銀色油墨。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="xunguang">查看完整圖集與理念 (5張) →</button>
+                <span class="work-meta-tag">Vol.56</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. 新竹高中 102 週年校慶主視覺 -->
+          <article class="work-card reveal" data-category="vi" data-modal="anniv102" style="--delay: 0.08s">
+            <div class="work-preview">
+              <img src="assets/extracted/img-044.jpg" alt="新竹高中102週年校慶主視覺與周邊" loading="lazy" />
+              <span class="work-badge badge-vi">02 · 視覺識別設計</span>
+              <span class="work-year">p.22–27</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#標準字</span>
+                <span>#海報手冊</span>
+                <span>#周邊商品</span>
+                <span>#社群破五萬瀏覽</span>
+              </div>
+              <h3 class="work-title">新竹高中 102 週年校慶主視覺</h3>
+              <p class="work-desc">
+                以「新竹風」作為視覺動線，運用校徽中的橘與綠構築自由線條，文字參考校徽「中」字方正特點。串連學務處、圖書館、家長會、班聯會與校刊社，延伸至秩序冊、音樂會手冊與販售周邊。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="anniv102">查看完整圖集與理念 (6張) →</button>
+                <span class="work-meta-tag">102nd Anniv.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. 竹嶺班聯組織視覺識別系統 -->
+          <article class="work-card reveal" data-category="vi" data-modal="hcca">
+            <div class="work-preview">
+              <img src="assets/extracted/img-076.jpg" alt="竹嶺班聯組織視覺識別系統旗幟" loading="lazy" />
+              <span class="work-badge badge-vi">02 · 視覺識別設計</span>
+              <span class="work-year">p.34–39</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#標誌設計</span>
+                <span>#標準字</span>
+                <span>#視覺識別規範手冊</span>
+                <span>#延伸應用物</span>
+              </div>
+              <h3 class="work-title">竹嶺班聯組織視覺識別系統 (HCCA)</h3>
+              <p class="work-desc">
+                靈感源自校園平面圖多棟建築地基呈現「L」字形與地勢起伏特徵，將英文縮寫「HCCA」與校舍特色結合；標準字主筆自左下向右上延伸，搭配信任深藍與創新活力黃，建立完整識別規範手冊。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="hcca">查看完整圖集與理念 (6張) →</button>
+                <span class="work-meta-tag">HCCA VI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. 德國文化日活動主視覺 -->
+          <article class="work-card reveal" data-category="vi" data-modal="german" style="--delay: 0.08s">
+            <div class="work-preview">
+              <img src="assets/extracted/img-066.jpg" alt="德國文化日活動主視覺摺頁與海報" loading="lazy" />
+              <span class="work-badge badge-vi">02 · 視覺識別設計</span>
+              <span class="work-year">p.28–31</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#包浩斯幾何</span>
+                <span>#標準字</span>
+                <span>#活動摺頁</span>
+                <span>#海報與工作證</span>
+              </div>
+              <h3 class="work-title">德國文化日活動主視覺 (German Culture Day)</h3>
+              <p class="work-desc">
+                以康丁斯基「藍圓、紅方、黃三角」造形理論為基礎，標準字參考 Herbert Bayer 經典字體 Universal Bayer 轉化中文字「口」形連筆與圓圈跳色，呼應歐洲街頭藝人表演的趣味與包浩斯調性。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="german">查看完整圖集與理念 (4張) →</button>
+                <span class="work-meta-tag">Bauhaus</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. 新竹高中 79 屆二班視覺識別 -->
+          <article class="work-card reveal" data-category="vi" data-modal="class202">
+            <div class="work-preview">
+              <img src="assets/extracted/img-109.jpg" alt="新竹高中79屆二班視覺識別特優班旗" loading="lazy" />
+              <span class="work-badge badge-vi">02 · 視覺識別設計</span>
+              <span class="work-year">p.40–41</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#班服設計</span>
+                <span>#特優班旗</span>
+                <span>#MadeInHCHS</span>
+              </div>
+              <h3 class="work-title">新竹高中 79 屆二班視覺識別 (202 Made in HCHS)</h3>
+              <p class="work-desc">
+                打造一件「穿在路上也不尷尬的流行 T-shirt」。將「文組畢業去刷條碼」的負面標籤轉化為班級標誌，背面左下角刻意設計像忘記撕的洗標；班旗邀請全班共同描圖繪製，榮獲班旗競賽特優。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="class202">查看完整圖集與理念 (5張) →</button>
+                <span class="work-meta-tag">班旗特優</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. 第 36 屆竹中竹女聯合文藝獎主視覺 -->
+          <article class="work-card reveal" data-category="vi" data-modal="literary36" style="--delay: 0.08s">
+            <div class="work-preview">
+              <img src="assets/extracted/img-073.jpg" alt="第36屆竹中竹女聯合文藝獎主視覺海報" loading="lazy" />
+              <span class="work-badge badge-vi">02 · 視覺識別設計</span>
+              <span class="work-year">p.32–33</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#邀請卡</span>
+                <span>#決審海報</span>
+                <span>#書寫與鉛筆意象</span>
+              </div>
+              <h3 class="work-title">第 36 屆竹中竹女聯合文藝獎主視覺</h3>
+              <p class="work-desc">
+                在人工智慧當道的此刻，以「書寫」為靈感，試圖帶領參與者回歸創作起點，重拾平凡卻充滿力量的鉛筆與橡皮擦，在稿紙格線上創作屬於高中生的青春作品。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="literary36">查看完整圖集與理念 (3張) →</button>
+                <span class="work-meta-tag">36th Literary</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. 竹嶺新生刊第三期《竹劍》 -->
+          <article class="work-card reveal" data-category="editorial" data-modal="zhujian">
+            <div class="work-preview">
+              <img src="assets/extracted/img-037.jpg" alt="竹嶺新生刊第三期《竹劍》" loading="lazy" />
+              <span class="work-badge badge-editorial">01 · 刊物與裝幀設計</span>
+              <span class="work-year">p.16–19</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#刊物編輯</span>
+                <span>#版面設計</span>
+                <span>#幾何色塊插圖</span>
+              </div>
+              <h3 class="work-title">竹嶺新生刊第三期《竹劍》(A Normal Day Vol.3)</h3>
+              <p class="work-desc">
+                幫助新生了解竹中生活的領航刊物。一改往期具象插圖，以趣味幾何色塊與線條呈現竹中日治時期曾推廣過的劍道，並新增「竹中生的一天」日記小說單元與校園生存地圖。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="zhujian">查看完整圖集與理念 (4張) →</button>
+                <span class="work-meta-tag">Vol.3</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. 新竹高中 102 週年校慶運動會快報、特報 -->
+          <article class="work-card reveal" data-category="editorial" data-modal="express" style="--delay: 0.08s">
+            <div class="work-preview">
+              <img src="assets/extracted/img-025.jpg" alt="新竹高中102週年校慶運動會快報與特報" loading="lazy" />
+              <span class="work-badge badge-editorial">01 · 刊物與裝幀設計</span>
+              <span class="work-year">p.14–15</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#編輯策劃</span>
+                <span>#六小時極限發刊</span>
+                <span>#小誌Zine特報</span>
+              </div>
+              <h3 class="work-title">新竹高中 102 週年校慶運動會快報、特報</h3>
+              <p class="work-desc">
+                快報在校刊社與攝影社、圖書館支援下，於 6 小時內完成訪問、攝影與排版，於校慶當日下午即時發刊；特報首次以「小誌」形式呈現，延伸校慶主視覺元素連貫現場氛圍。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="express">查看完整圖集與理念 (5張) →</button>
+                <span class="work-meta-tag">Express &amp; Zine</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. 竹嶺校刊幹部介紹、獲獎海報與《巡光》社群貼文 -->
+          <article class="work-card reveal" data-category="social" data-modal="social-posts">
+            <div class="work-preview">
+              <img src="assets/extracted/img-116.jpg" alt="竹嶺校刊幹部介紹與社團宣傳貼文" loading="lazy" />
+              <span class="work-badge badge-social">03 · 社群與數位媒介</span>
+              <span class="work-year">p.44–47</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#IG九宮格排版</span>
+                <span>#全國校刊金質獎海報</span>
+                <span>#《線徑》縮圖</span>
+              </div>
+              <h3 class="work-title">竹嶺校刊社群視覺、《線徑》縮圖與《巡光》宣傳貼文</h3>
+              <p class="work-desc">
+                包含竹嶺校刊社幹部介紹與社博倒數九宮格貼文、Vol.55《時光洄導 Loop》榮獲全國高中校刊金質獎暨紀州庵冠軍電子海報、《線徑》紀錄片縮圖與《巡光》光暈三連貼文。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="social-posts">查看完整圖集與理念 (5張) →</button>
+                <span class="work-meta-tag">Social Media</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. 校刊社美編課程簡報 -->
+          <article class="work-card reveal" data-category="social" data-modal="course-slides" style="--delay: 0.08s">
+            <div class="work-preview">
+              <img src="assets/extracted/img-127.jpg" alt="校刊社美編課程簡報設計" loading="lazy" />
+              <span class="work-badge badge-social">03 · 社群與數位媒介</span>
+              <span class="work-year">p.50–51</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#社團課程教學</span>
+                <span>#網格系統</span>
+                <span>#InDesign實作</span>
+              </div>
+              <h3 class="work-title">校刊社美編課程簡報：文稿完成到發刊前的必修課</h3>
+              <p class="work-desc">
+                負責校刊社美編課程教學，以「網格」作為視覺基底呈現編輯過程。課程涵蓋字體（Noto 字型計畫）、版面（國際主義網格系統）、色彩（CMYK）、印刷、裝幀與靈感搜集六大章節。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="course-slides">查看完整圖集與理念 (2張) →</button>
+                <span class="work-meta-tag">Editorial Course</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. 雜誌讀書會 &「未來」讀書會簡報 -->
+          <article class="work-card reveal" data-category="social" data-modal="bookclub-slides">
+            <div class="work-preview">
+              <img src="assets/extracted/img-125.jpg" alt="雜誌讀書會與未來讀書會簡報設計" loading="lazy" />
+              <span class="work-badge badge-social">03 · 社群與數位媒介</span>
+              <span class="work-year">p.48–49</span>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span>#活動策劃</span>
+                <span>#簡報設計</span>
+                <span>#雜誌與Mook解析</span>
+              </div>
+              <h3 class="work-title">雜誌讀書會簡報 &amp;「未來」班級讀書會簡報</h3>
+              <p class="work-desc">
+                透過強烈對比的字體解構與色塊拼貼，引導同學認識雜誌（Magazine）、Mook 與書籍在材質、開本與排版上的差異，並策劃「未來」主題尋書與閱讀討論流程。
+              </p>
+              <div class="work-footer">
+                <button class="work-detail-btn" data-modal="bookclub-slides">查看完整圖集與理念 (2張) →</button>
+                <span class="work-meta-tag">Presentation</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / 經歷與獲獎紀錄 -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-index">04 / EXPERIENCE &amp; RECOGNITION</span>
+          <h2 class="section-title">職務經歷與專案成果</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-period">竹嶺校刊社 · HCHS Journal</div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">美術編輯 · 美編課程講師</h3>
+              <div class="timeline-company">國立新竹高級中學 竹嶺校刊社</div>
+              <p class="timeline-desc">
+                統籌《竹嶺校刊 56 期：巡光》裝幀與版面設計、編輯《竹嶺新生刊第三期：竹劍》與 102 週年校慶運動會快報／特報；團隊刊物榮獲全國高中校刊競賽「金質獎、美編獎」及紀州庵校刊競賽「冠軍、在地關懷獎」，並負責社內美編與 InDesign 實作課程教學。
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-period">竹嶺班聯會 · HCCA 38th</div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">設計長 · Chief Designer</h3>
+              <div class="timeline-company">國立新竹高級中學 竹嶺班聯會 (HCCA)</div>
+              <p class="timeline-desc">
+                從零建立「竹嶺班聯組織視覺識別系統」，制定標誌、標準字、色彩系統與《新竹高中班聯會視覺識別系統規範手冊》，並統籌社群公告、幹部介紹與校園活動視覺規範。
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-period">大型活動視覺統籌 · 2024–2025</div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">主視覺設計師 · Key Visual Designer</h3>
+              <div class="timeline-company">新竹高中 102 週年校慶 / 德國文化日 / 第 36 屆竹中竹女聯合文藝獎</div>
+              <p class="timeline-desc">
+                受邀操刀創校 102 週年校慶主視覺（串連五大單位、社群瀏覽破五萬人次）、2024 德國維蘭德高中回訪「德國文化日」主視覺，以及第 36 屆竹中竹女聯合文藝獎決審主視覺；另以 79 屆二班視覺識別榮獲全校班旗競賽「特優」。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 / 結語與聯絡資訊 (重現 p.52 封底致謝與聯絡資訊) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="closing-grid">
+          <div class="closing-card reveal">
+            <div class="closing-photo-wrap">
+              <div class="closing-lockup" aria-hidden="true">
+                <span class="c-sean">Sean</span>
+                <span class="c-lin">Lin</span>
+              </div>
+              <img src="assets/extracted/img-129.jpg" alt="林杉 Sean Lin 作品集封底照" class="closing-photo" />
+            </div>
+
+            <div class="closing-message">
+              <h3 class="closing-name">林杉</h3>
+              <p>謝謝您閱讀到這裡！</p>
+              <p>
+                這些頁面紀錄了我過去的探索與嘗試，<br />
+                也是設計生涯的第一本成果集。
+              </p>
+              <p>
+                我喜歡設計，也樂於挑戰各種可能性，<br />
+                期待未來在大學，<br />
+                帶著探索世界的好奇心，發揮創意，<br />
+                創造出更多打動人心的好作品。
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-box reveal" style="--delay: 0.15s">
+            <span class="section-index">05 / CONTACT</span>
+            <h2 class="contact-heading">與我聯繫 Contact</h2>
+
+            <div class="contact-table">
+              <div class="contact-row">
+                <span class="contact-label">E-mail</span>
+                <a href="mailto:seanlin103230@gmail.com" class="contact-val">seanlin103230@gmail.com ↗</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label">Instagram</span>
+                <a href="https://www.instagram.com/seanlin_03/" target="_blank" rel="noopener noreferrer" class="contact-val">@seanlin_03 ↗</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label">Portfolio Link</span>
+                <a href="https://pse.is/seanportfolio" target="_blank" rel="noopener noreferrer" class="contact-val">https://pse.is/seanportfolio ↗</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label">PDF Download</span>
+                <a href="assets/SeanLin-Portfolio-2023-2026.pdf" target="_blank" rel="noopener noreferrer" class="contact-val">2023–2026 完整設計作品集 (PDF) ↗</a>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">您的稱呼 / 單位</label>
+                <input type="text" id="name" name="name" placeholder="例如：○○老師 / ○○活動團隊" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">聯絡信箱或 IG 帳號</label>
+                <input type="text" id="email" name="email" placeholder="name@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">訊息內容</label>
+                <textarea id="message" name="message" rows="3" placeholder="歡迎留下您的想法、建議或設計合作邀約..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                <span>寄送訊息給林杉</span>
+              </button>
+              <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 專案多圖畫廊與完整理念彈窗 Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="關閉視窗">✕</button>
+
+      <div class="modal-grid">
+        <div class="modal-gallery">
+          <div class="modal-main-img-wrap">
+            <img src="" alt="" id="modalMainImg" class="modal-main-img" />
+          </div>
+          <div class="modal-thumbs" id="modalThumbs"></div>
+        </div>
+
+        <div class="modal-details">
+          <span class="modal-category" id="modalCategory"></span>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <div class="modal-tags" id="modalTags"></div>
+          <div class="modal-body" id="modalBody"></div>
+          <div class="modal-highlights" id="modalHighlights"></div>
+          <div class="modal-actions">
+            <a href="assets/SeanLin-Portfolio-2023-2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              於完整 PDF 作品集中檢視 ↗
+            </a>
+            <a href="https://www.instagram.com/seanlin_03/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              IG @seanlin_03 ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="currentYear">2026</span> 林杉 Sean Lin · 2023–2026 Design Portfolio (<a href="mailto:seanlin103230@gmail.com">seanlin103230@gmail.com</a> · <a href="https://www.instagram.com/seanlin_03/" target="_blank" rel="noopener noreferrer">@seanlin_03</a>)</p>
+      <a href="#hero" class="back-to-top">回到頂部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
