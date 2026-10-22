@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '竹嶺校刊 56 期《巡光》',
       tags: ['#裝幀設計', '#編輯統籌', '#雙冊合一', '#銀色油墨'],
       images: [
-        'assets/extracted/img-003.jpg',
-        'assets/extracted/img-004.jpg',
-        'assets/extracted/img-011.jpg',
-        'assets/extracted/img-014.jpg',
-        'assets/extracted/img-019.jpg'
+        'img-003.jpg',
+        'img-004.jpg',
+        'img-011.jpg',
+        'img-014.jpg',
+        'img-019.jpg'
       ],
       paragraphs: [
         '【主題概念】以「巡光」為題，探索日常中多層次的感知與體察。章節依循光譜概念編排，隨閱讀動線推進，內容由幽微漸趨明朗，引領讀者於暗影中溯尋光的痕跡。',
@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '新竹高中 102 週年校慶運動會快報、特報',
       tags: ['#編輯策劃', '#延伸應用', '#六小時極速發刊', '#小誌Zine'],
       images: [
-        'assets/extracted/img-025.jpg',
-        'assets/extracted/img-026.jpg',
-        'assets/extracted/img-028.jpg',
-        'assets/extracted/img-029.jpg',
-        'assets/extracted/img-030.jpg'
+        'img-025.jpg',
+        'img-026.jpg',
+        'img-028.jpg',
+        'img-029.jpg',
+        'img-030.jpg'
       ],
       paragraphs: [
         '【校慶快報】快報在校刊社團隊合作與攝影社、圖書館的支援下，六小時內完成了訪問、攝影、排版，成功在校慶當日下午發刊，記錄沐嶺儀隊專訪與竹中越野等熱血現場。',
@@ -62,10 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '竹嶺新生刊第三期《竹劍》',
       tags: ['#刊物編輯', '#版面設計', '#新生領航刊物'],
       images: [
-        'assets/extracted/img-037.jpg',
-        'assets/extracted/img-041.jpg',
-        'assets/extracted/img-042.jpg',
-        'assets/extracted/img-043.jpg'
+        'img-037.jpg',
+        'img-041.jpg',
+        'img-042.jpg',
+        'img-043.jpg'
       ],
       paragraphs: [
         '【刊物介紹】《竹劍》作為幫助新生更了解竹中的刊物，裡頭飽含了校刊社學長在竹中生活一學年的體悟，以及學弟妹們不可不知的竹中字彙。本刊新增「竹中生的一天」單元，以日記小說的形式，讓讀者身歷其境體驗竹中生活。',
@@ -81,12 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '新竹高中 102 週年校慶主視覺',
       tags: ['#標準字', '#海報手冊', '#周邊商品', '#跨處室串連'],
       images: [
-        'assets/extracted/img-044.jpg',
-        'assets/extracted/img-046.jpg',
-        'assets/extracted/img-047.jpg',
-        'assets/extracted/img-048.jpg',
-        'assets/extracted/img-049.jpg',
-        'assets/extracted/img-055.jpg'
+        'img-044.jpg',
+        'img-046.jpg',
+        'img-047.jpg',
+        'img-048.jpg',
+        'img-049.jpg',
+        'img-055.jpg'
       ],
       paragraphs: [
         '【設計理念】自受邀參與設計之初便不斷思考「竹中走過百年，如何呈現創新又足以代表這座學校的標誌？」設計回歸竹中最核心的意涵，以「新竹風」做為視覺動線，並運用校徽中的橘與綠，構築出屬於竹中的自由線條。在文字設計上，參考校徽「中」字方正的特點，呈現既穩重踏實卻又不失動態活力的視覺。',
@@ -102,10 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '德國文化日活動主視覺 (German Culture Day)',
       tags: ['#標準字', '#摺頁', '#海報', '#工作證', '#包浩斯'],
       images: [
-        'assets/extracted/img-066.jpg',
-        'assets/extracted/img-062.jpg',
-        'assets/extracted/img-069.jpg',
-        'assets/extracted/img-070.jpg'
+        'img-066.jpg',
+        'img-062.jpg',
+        'img-069.jpg',
+        'img-070.jpg'
       ],
       paragraphs: [
         '【緣起】2024 年 7 月竹中師生赴德國巴登符騰堡邦的維蘭德高中參訪；同年 10 月底維蘭德高中回訪本校，特別召募學生藝人將歐洲街頭藝人表演文化帶進校園。',
@@ -122,9 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '第 36 屆竹中竹女聯合文藝獎主視覺',
       tags: ['#邀請卡', '#決審海報', '#書寫概念'],
       images: [
-        'assets/extracted/img-073.jpg',
-        'assets/extracted/img-075.jpg',
-        'assets/extracted/img-074.jpg'
+        'img-073.jpg',
+        'img-075.jpg',
+        'img-074.jpg'
       ],
       paragraphs: [
         '【專案背景】竹中竹女聯合文藝獎為兩校難得的共同競賽，每年邀請業界知名作家（新詩、散文、小說）擔任決審評審，讓同學在現場與作家深度交流。',
@@ -140,12 +140,12 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '竹嶺班聯組織視覺識別系統 (HCCA)',
       tags: ['#標誌', '#標準字', '#識別規範手冊', '#延伸應用物'],
       images: [
-        'assets/extracted/img-076.jpg',
-        'assets/extracted/img-077.jpg',
-        'assets/extracted/img-092.jpg',
-        'assets/extracted/img-093.jpg',
-        'assets/extracted/img-094.jpg',
-        'assets/extracted/img-095.jpg'
+        'img-076.jpg',
+        'img-077.jpg',
+        'img-092.jpg',
+        'img-093.jpg',
+        'img-094.jpg',
+        'img-095.jpg'
       ],
       paragraphs: [
         '【標誌設計】打破校徽既有框架，靈感源自觀察校園平面圖，多棟建築地基呈現「L」字形，象徵竹嶺班聯根基於竹中校園；彎曲線條則呈現新竹高中地勢起伏的校地特徵，並將英文縮寫「HCCA」與校舍特色結合。',
@@ -161,10 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '新竹高中 79 屆二班視覺識別 (202 Made in HCHS)',
       tags: ['#班服設計', '#特優班旗', '#條碼與洗標概念'],
       images: [
-        'assets/extracted/img-109.jpg',
-        'assets/extracted/img-110.jpg',
-        'assets/extracted/img-111.jpg',
-        'assets/extracted/img-114.jpg'
+        'img-109.jpg',
+        'img-110.jpg',
+        'img-111.jpg',
+        'img-114.jpg'
       ],
       paragraphs: [
         '【設計理念】設計之初，想做一件「不像班服」的班服，甚至是穿在路上也不尷尬的流行 T-shirt。將「文組畢業去刷條碼」的負面標籤，轉化成為我們顯而易見的班級標誌，班服背面左下角刻意設計像忘記撕的標籤。',
@@ -180,11 +180,11 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '竹嶺校刊幹部介紹、獲獎海報、《線徑》縮圖與《巡光》貼文',
       tags: ['#IG九宮格排版', '#電子海報', '#影片縮圖', '#社群行銷'],
       images: [
-        'assets/extracted/img-116.jpg',
-        'assets/extracted/img-117.jpg',
-        'assets/extracted/img-119.jpg',
-        'assets/extracted/img-120.jpg',
-        'assets/extracted/img-121.jpg'
+        'img-116.jpg',
+        'img-117.jpg',
+        'img-119.jpg',
+        'img-120.jpg',
+        'img-121.jpg'
       ],
       paragraphs: [
         '【社群與數位傳播】針對 Instagram 與 YouTube 等不同數位媒介特性，規劃高辨識度的社群視覺：包含竹嶺校刊幹部介紹與社博倒數九宮格拼貼海報、竹嶺校刊 Vol.55《時光洄導 Loop》榮獲全國高中校刊競賽金質獎／美編獎與紀州庵冠軍之慶賀電子海報。',
@@ -199,9 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '竹嶺校刊《巡光》宣傳貼文',
       tags: ['#社群貼文', '#光暈漸層', '#竹嶺校刊56期'],
       images: [
-        'assets/extracted/img-119.jpg',
-        'assets/extracted/img-120.jpg',
-        'assets/extracted/img-121.jpg'
+        'img-119.jpg',
+        'img-120.jpg',
+        'img-121.jpg'
       ],
       paragraphs: [
         '延伸《竹嶺校刊 56 期：巡光》實體書封面的柔和失焦光暈與纖細標準字，於 Instagram 打造橫跨三格的無縫光譜視覺貼文，完整呈現七大章節架構。'
@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '雜誌讀書會簡報 &「未來」讀書會簡報',
       tags: ['#活動策劃', '#簡報設計', '#字體拼貼'],
       images: [
-        'assets/extracted/img-125.jpg',
-        'assets/extracted/img-126.jpg'
+        'img-125.jpg',
+        'img-126.jpg'
       ],
       paragraphs: [
         '【雜誌讀書會簡報】以大膽的紅、黑、黃色塊與解構的「雜誌」字體排印，帶領同學探討 Book、Magazine 與 Mook 的差異，並賞析《新活水》、《地味手帖》等刊物的材質與排版特色。',
@@ -231,8 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '校刊社美編課程簡報',
       tags: ['#社團課程', '#簡報設計', '#網格系統教學'],
       images: [
-        'assets/extracted/img-127.jpg',
-        'assets/extracted/img-128.jpg'
+        'img-127.jpg',
+        'img-128.jpg'
       ],
       paragraphs: [
         '【課程規劃】我負責校刊社美編課程的教學，第一週偏向基礎概念與名詞講解，第二週進入 InDesign 軟體實作教學。',
